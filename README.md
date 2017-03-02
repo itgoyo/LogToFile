@@ -22,8 +22,8 @@ Android一个简单实用把Log日志打印到手机本地文件开源代码
 LogToFileUtils.init(mContexet);
 然后调.write方法写手机本地文件
 
-<<<<<<< HEAD
-举个例子
+
+### 举个例子
 ```java
 
 public class MainActivity extends AppCompatActivity {
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 }
 
 ```
-=======
+
 - 方法二
 
 ### Step 1. Add the JitPack repository to your build file
@@ -61,4 +61,4 @@ dependencies {
 	        compile 'com.github.itgoyo:LogToFile:v1.0'
 	}
   ```
->>>>>>> origin/master
+
