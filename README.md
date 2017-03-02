@@ -7,7 +7,7 @@ Android一个简单实用把Log日志打印到手机本地文件开源代码
 
 1：初始化 FileLogUtils.init(Context);
 
-2：使用 FileLogUtils.write("Hello Word！");
+2：使用 FileLogUtils.write(你的Log信息);
 
 日志文件路径：
 
@@ -19,3 +19,20 @@ Android一个简单实用把Log日志打印到手机本地文件开源代码
 
 LogToFileUtils.init(mContexet);
 然后调.write方法写手机本地文件
+
+举个例子
+```java
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        LogToFileUtils.init(this); //初始化
+
+        LogToFileUtils.write("sample text");//写入日志
+    }
+}
+
+```

@@ -12,7 +12,7 @@ import java.io.FileWriter;
 import java.text.SimpleDateFormat;
 
 /**
- * Created by admin on 2017/2/23.
+ * Created by itgoyo on 2017/2/23.
  * <p>
  * 更新时间 2017/2/23
  * 更新描述 ${TODO}
