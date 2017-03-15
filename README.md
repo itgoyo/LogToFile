@@ -1,4 +1,8 @@
 # LogToFile
+
+[![GitHub stars](https://img.shields.io/github/stars/itgoyo/LogToFile.svg?style=social&label=Star)](https://github.com/itgoyo/LogToFile) [![GitHub forks](https://img.shields.io/github/forks/itgoyo/LogToFile.svg?style=social&label=Fork)](https://github.com/itgoyo/LogToFile/fork) [![GitHub watchers](https://img.shields.io/github/watchers/itgoyo/LogToFile.svg?style=social&label=Watch)](https://github.com/itgoyo/LogToFile) [![GitHub followers](https://img.shields.io/github/followers/itgoyo.svg?style=social&label=Follow)](https://github.com/itgoyo/LogToFile)  
+
+
 Android一个简单实用把Log日志打印到手机本地文件开源代码
 
 把日志写入到文件的工具类，优先顺序 SD卡->外部存储->内部存储，三者按顺序自动选择
