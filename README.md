@@ -2,6 +2,34 @@
 ### ↓支持一下
 [![GitHub stars](https://img.shields.io/github/stars/itgoyo/LogToFile.svg?style=social&label=Star)](https://github.com/itgoyo/LogToFile) [![GitHub forks](https://img.shields.io/github/forks/itgoyo/LogToFile.svg?style=social&label=Fork)](https://github.com/itgoyo/LogToFile/fork) [![GitHub watchers](https://img.shields.io/github/watchers/itgoyo/LogToFile.svg?style=social&label=Watch)](https://github.com/itgoyo/LogToFile) [![GitHub followers](https://img.shields.io/github/followers/itgoyo.svg?style=social&label=Follow)](https://github.com/itgoyo/LogToFile)  
 
+Android a simple and practical to print to local phone logs Log files open source
+
+The log file is written to the tools, the priority SD card -> external memory -> internal storage, in order to automatically select the three
+
+Instructions:
+
+
+1: Initialization FileLogUtils.init (Context);
+
+2: Use FileLogUtils.write (your Log information);
+
+Log File Path:
+
+If the SD card or external memory exists, the SD \ Android \ data \ package name \ files \ Log \ logs.txt
+
+If there is an SD card or external memory, then \ data \ data \ package name \ files \ Log \ logs.txt
+
+Before using this square to remember to initialize
+
+```
+LogToFileUtils.init (mContexet); 
+```
+then
+```
+FileLogUtils.write("yourlog");
+
+```
+-------
 
 Android一个简单实用把Log日志打印到手机本地文件开源代码
 
@@ -23,7 +51,8 @@ Android一个简单实用把Log日志打印到手机本地文件开源代码
 
 在使用此方前要记得先初始化
 
-LogToFileUtils.init(mContexet);
+LogToFileUtils.init(mContexet);//最好是在项目的Application配置这样子就不用每次都再设置一次了
+
 然后调.write方法写手机本地文件
 
 
@@ -77,12 +106,16 @@ dependencies {
     同时为使用者提供了足够的复制，分发，修改的权利： 
     
     可自由复制  
-    你可以将软件复制到你的电脑，你客户的电脑，或者任何地方。复制份数没有任何限制。 
+    你可以将软件复制到你的电脑，你客户的电脑，或者任何地方。复制份数没有任何限制。
+
     可自由分发  
-    在你的网站提供下载，拷贝到U盘送人，或者将源代码打印出来从窗户扔出去（环保起见，请别这样做）。  
+    在你的网站提供下载，拷贝到U盘送人，或者将源代码打印出来从窗户扔出去（环保起见，请别这样做）。
+
     可以用来盈利
     你可以在分发软件的时候收费，但你必须在收费前向你的客户提供该软件的 GNU GPL  
     许可协议，以便让他们知道，他们可以从别的渠道免费得到这份软件，以及你收费的理由。  
+
+    
     可自由修改  
     如果你想添加或删除某个功能，没问题，如果你想在别的项目中使用部分代码，  
     也没问题，唯一的要求是，使用了这段代码的项目也必须使用 GPL 协议。  
