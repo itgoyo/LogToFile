@@ -22,7 +22,7 @@ If there is an SD card or external memory, then \ data \ data \ package name \ f
 Before using this square to remember to initialize
 
 ```
-LogToFileUtils.init (mContexet); 
+FileLogUtils.init (mContexet); 
 ```
 then
 ```
